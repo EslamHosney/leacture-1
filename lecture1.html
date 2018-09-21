@@ -2,23 +2,34 @@
 <head>
   <title>Try Branching</title>
   <style>
-  datalist,h1{
-    color: red;
-  }
+    input[type=text]{
+      background-color: blue;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      font-size: 24px;
+      background-color:  blue;
+    }
+    button:hover{
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      font-size: 24px;
+    }
+	p::selection{
+	background-color: orange;
+	}
   </style>
 </head>
 <body>
-  <h1 style="color: blue;">Hello World!</h1>
-  <h2 style="background : blue;"> New bracnh</h2>
-  <a href="#here">Eslam is Here</a>
-  <h1>A</h1>
-  <input name="Country" list="code">
-  <datalist id="code">
-    <option value="Egypt">
-    <option value="Palestine">
-  </datalist>
+  <form>
+    <input type="text" name="name" placeholder="First Name">
+    <input type="text" name="name" placeholder="Last Name">
+    <input type="number" name="age" placeholder="age">
+  </form>
+  <p>Hello Select this part of the page</p>
+  <button>Click me!</button>
 
-
-  <h1 id="here">Good</h1>
 </body>
 </html>
